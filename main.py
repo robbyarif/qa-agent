@@ -141,6 +141,8 @@ def run_agent():
                     function_name = tool_call.function.name
                     function_args = json.loads(tool_call.function.arguments)
                     
+                    print(f"\n[Debug] Executing tool: {function_name} with arguments {function_args}")
+                    
                     # Dynamic Dispatch using Function Map
                     function_to_call = available_functions.get(function_name)
                     
