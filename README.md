@@ -2,7 +2,7 @@
 
 This project is a Command Line Interface (CLI) application that acts as a "Financial Assistant". It uses an LLM with Function Calling to answer user questions about mocked exchange rates and stock prices. 
 
-This project fulfills the requirements for Assignment 1 (Building Your First Question Answering Agent) by utilizing the OpenAI Python SDK and pointing it toward Gemini's OpenAI-compatible API endpoint.
+This project act as the Assignment 1 (Building Your First Question Answering Agent), part of the **CE8014 Agentic AI: Foundations and Development** course (Spring 2026, Department of Computer Science and Information Engineering, National Central University). It utilizes the OpenAI Python SDK and points it toward Gemini's OpenAI-compatible API endpoint.
 
 ## Features Implemented
 - **Function Map**: Dynamic tool execution routing without `if-else` chains.
@@ -24,10 +24,15 @@ This project fulfills the requirements for Assignment 1 (Building Your First Que
    ```
 
 2. **Set up Environment Variables**
-   Create a `.env` file in the root directory and add your Gemini API key.
-   ```env
-   GEMINI_API_KEY=your_gemini_api_key_here
+   Copy the provided `.env.example` file and rename it to `.env`:
+   ```bash
+   cp .env.example .env
    ```
+   Alternatively, on Windows, you can rename it in the file explorer or use:
+   ```cmd
+   copy .env.example .env
+   ```
+   Then, open the newly created `.env` file and replace `your_api_key_here` with your actual Gemini API key.
 
 ## Running the Agent
 
